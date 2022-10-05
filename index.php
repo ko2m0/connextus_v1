@@ -1,6 +1,6 @@
 <?php
-$mysqli = new mysqli("72.167.84.16","ko2m0","info4ko2m0","connextus_demo");
-/*$mysqli = new mysqli("localhost","root","","connextus_demo");*/
+/*$mysqli = new mysqli("72.167.84.16","ko2m0","info4ko2m0","connextus_demo");*/
+$mysqli = new mysqli("localhost","root","","connextus_demo");
 
 
 if ($mysqli -> connect_errno) {
@@ -38,19 +38,19 @@ if ($mysqli -> connect_errno) {
 
  ?>
 <!DOCTYPE HTML>
-
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/splash/splash-icon.png">
     <link rel="apple-touch-startup-image" href="images/splash/splash-screen.png"
-        media="screen and (max-device-width: 320px)" />
+        media="screen and (max-device-width: 320px)">
     <link rel="apple-touch-startup-image" href="images/splash/splash-screen@2x.png"
-        media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" />
-    <link rel="apple-touch-startup-image" sizes="640x1096" href="images/splash/splash-screen@3x.png" />
+        media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" sizes="640x1096" href="images/splash/splash-screen@3x.png">
 
     <title>ConneXtus :: Professional Business Card Binder</title>
 
@@ -66,16 +66,16 @@ if ($mysqli -> connect_errno) {
     
 
 
-    <script type="text/javascript" src="scripts/jquery.js"></script>
-    <script type="text/javascript" src="scripts/jqueryui.js"></script>
-    <script type="text/javascript" src="scripts/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="scripts/jquery.swipebox.js"></script>
-    <script type="text/javascript" src="scripts/colorbox.js"></script>
-    <script type="text/javascript" src="scripts/snap.js"></script>
-    <script type="text/javascript" src="scripts/contact.js"></script>
-    <script type="text/javascript" src="scripts/custom.js"></script>
-    <script type="text/javascript" src="scripts/framework.js"></script>
-    <script type="text/javascript" src="scripts/framework.launcher.js"></script>
+    <script  src="scripts/jquery.js"></script>
+    <script  src="scripts/jqueryui.js"></script>
+    <script  src="scripts/owl.carousel.min.js"></script>
+    <script  src="scripts/jquery.swipebox.js"></script>
+    <script  src="scripts/colorbox.js"></script>
+    <script  src="scripts/snap.js"></script>
+    <script  src="scripts/contact.js"></script>
+    <script  src="scripts/custom.js"></script>
+    <script  src="scripts/framework.js"></script>
+    <script  src="scripts/framework.launcher.js"></script>
 
 </head>
 
@@ -110,7 +110,7 @@ if ($mysqli -> connect_errno) {
     <div class="content">
         <div class="container">
             <div class="container-flex">
-                <div class="svgProfileMask">
+                <div class="svgProfileMask" id="InfoBtn">
                     <svg viewBox="0 0 200 300" width="70" height="100">
                         <defs>
                             <clipPath id="clip">
@@ -121,6 +121,7 @@ if ($mysqli -> connect_errno) {
                             xlink:href="<?php echo $row["profile_pic"]; ?>"
                             clip-path="url(#clip)" />
                     </svg>
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" style="position:absolute; top: 0;"  xmlns="http://www.w3.org/2000/svg"><rect x="0" fill="none" width="24" height="24"/><g fill="#ff9900"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></g></svg>
     
                 </div>
                 <div class="flexxer flexxer-column align-start just-start" style="padding: 0 10px">
@@ -298,13 +299,59 @@ if ($mysqli -> connect_errno) {
     </div>
 
 
+    <!-- INFO & CLIENTS Modal -->
+    <div id="ModalInfo" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close3 close">&times;</span>
+                <h2 class="unuscolor-txt">About Me</h2>
+            </div>
+            <div class="decoration"></div>
+            <div class="modal-body">
+                <div class="container">
+                    <h4>
+                        <?php echo $row['profile_about']; ?>
+                    </h4>
+                    <div class="clear"></div>
+                </div>
+                <div class="decoration"></div>
+                <div class="container">
+                    <h4 class="caps unuscolor-txt">Some of my Clients</h4>
+                <ul class="gallery">
+                    <li><a class="" title="Client1"><img src="<?php echo $row["profile_client1"]; ?>" alt="img" /></a>
+                    </li>
+                    <li><a class="" title="Client2"><img src="<?php echo $row["profile_client2"]; ?>" alt="img" /></a>
+                    </li>
+                    <li><a class="" title="Client3"><img src="<?php echo $row["profile_client3"]; ?>" alt="img" /></a>
+                    </li>
+                    <li><a class="" title="Client4"><img src="<?php echo $row["profile_client4"]; ?>" alt="img" /></a>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+                </div> 
+            </div>
+            <div class="modal-footer">
+                <h3>&nbsp;</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ////// INFO & CLIENTS Modal -->
+
+
+
+
+
     <!-- Meeting Modal -->
     <div id="ModalMeet" class="modal">
 
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-                <span class="close">&times;</span>
+                <span class="close1 close">&times;</span>
                 <h2 class="unuscolor-txt">Meeting</h2>
             </div>
             <div class="decoration"></div>
@@ -396,7 +443,7 @@ if ($mysqli -> connect_errno) {
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-                <span class="close2">&times;</span>
+                <span class="close2 close">&times;</span>
                 <h2 class="unuscolor-txt">Referral</h2>
             </div>
             <div class="decoration"></div>
@@ -490,7 +537,10 @@ if ($mysqli -> connect_errno) {
 
 
     <div class="footer">
-        <p>Copyright 2022 ConneXtus</p>
+        <p>Copyright &copy; 2022 ConneXtus</p>
+        <small>Privacy Policy</small>
+        <small>Terms & Conditions</small>
+        
         <a href="#" class="go-up"></a>
     </div>
 
@@ -498,14 +548,17 @@ if ($mysqli -> connect_errno) {
         // Get the modal
         var modalMeet = document.getElementById("ModalMeet");
         var modalRefer = document.getElementById("ModalRefer");
+        var modalInfo = document.getElementById("ModalInfo");
 
         // Get the button that opens the modal
         var btn = document.getElementById("MeetBtn");
         var btn2 = document.getElementById("ReferBtn");
+        var btn3 = document.getElementById("InfoBtn");
 
         // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+        var span = document.getElementsByClassName("close1")[0];
         var span2 = document.getElementsByClassName("close2")[0];
+        var span3 = document.getElementsByClassName("close3")[0];
 
         // When the user clicks on the button, open the modal
         btn.onclick = function () {
@@ -513,6 +566,9 @@ if ($mysqli -> connect_errno) {
         }
         btn2.onclick = function () {
             modalRefer.style.display = "block";
+        }
+        btn3.onclick = function () {
+            modalInfo.style.display = "block";
         }
 
         // When the user clicks on <span> (x), close the modal
@@ -522,6 +578,9 @@ if ($mysqli -> connect_errno) {
 
         span2.onclick = function () {
             modalRefer.style.display = "none";
+        }
+        span3.onclick = function () {
+            modalInfo.style.display = "none";
         }
 
         // When the user clicks anywhere outside of the modal, close it
@@ -534,6 +593,12 @@ if ($mysqli -> connect_errno) {
         window.onclick = function (event) {
             if (event.target == modalRefer) {
                 modalRefer.style.display = "none";
+            }
+        }
+        
+        window.onclick = function (event) {
+            if (event.target == modalInfo) {
+                modalInfo.style.display = "none";
             }
         }
     </script>

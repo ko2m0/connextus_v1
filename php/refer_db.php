@@ -36,7 +36,7 @@ if ($conn->query($sql) === TRUE) {
   <!-- HTML/REFERRALFORM -->
   
   <!DOCTYPE HTML>
-
+    <html lang="en">
   <head>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
@@ -73,6 +73,27 @@ if ($conn->query($sql) === TRUE) {
       <script  src="../scripts/framework.js"></script>
       <script  src="../scripts/framework.launcher.js"></script>
   
+      <style>
+          
+          .meetingResponse {
+              position: fixed;
+              /* Stay in place */
+              z-index: 1;
+              /* Sit on top */
+              left: 0;
+              top: 0;
+              width: 100%;
+              /* Full width */
+              height: 100%;
+              /* Full height */
+              overflow: auto;
+              /* Enable scroll if needed */
+              background-color: rgb(1, 68, 121);
+              /* Fallback color */
+              background-color: rgba(1, 68, 121, 0.99);
+              /* Black w/ opacity */
+          }
+      </style>
   </head>
   
   <body>
@@ -110,33 +131,13 @@ if ($conn->query($sql) === TRUE) {
   </div>
   -->
   
-      <style>
-          
-          .meetingResponse {
-              position: fixed;
-              /* Stay in place */
-              z-index: 1;
-              /* Sit on top */
-              left: 0;
-              top: 0;
-              width: 100%;
-              /* Full width */
-              height: 100%;
-              /* Full height */
-              overflow: auto;
-              /* Enable scroll if needed */
-              background-color: rgb(1, 68, 121);
-              /* Fallback color */
-              background-color: rgba(1, 68, 121, 0.99);
-              /* Black w/ opacity */
-          }
-      </style>
+      
   
       <div class="content">
           <div class="container" style="text-align: center">
                       <div class="meetingResponse flexxer flexxer-column align-center just-center">
                            <span style="background-color: #ffffff; padding: 10px; margin: 10px; border-radius:8px">
-                              <img src="http://www.connextusnow.com/connextus_app/img/Connextus_logoSmall.svg" alt="ConneXtus" width="200px">
+                              <img src="http://www.connextusnow.com/connextus_app/img/Connextus_logoSmall.svg" alt="ConneXtus" width="200">
                            </span>
                               <h2 style="color: #ffffff;">Thank you for reaching me! <br> You will hear from me pretty soon!</h2>
   
@@ -152,13 +153,6 @@ if ($conn->query($sql) === TRUE) {
   
   
       </div>
-      
-  
-  
-      <!-- Meeting Modal -->
-      
-  
-      <!-- Refer Modal -->
       
   </body>
   

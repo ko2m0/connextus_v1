@@ -34,18 +34,19 @@ if ($conn->query($sql) === TRUE) {
   
 <!DOCTYPE HTML>
 
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/splash/splash-icon.png">
     <link rel="apple-touch-startup-image" href="images/splash/splash-screen.png"
-        media="screen and (max-device-width: 320px)" />
+        media="screen and (max-device-width: 320px)">
     <link rel="apple-touch-startup-image" href="images/splash/splash-screen@2x.png"
-        media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" />
-    <link rel="apple-touch-startup-image" sizes="640x1096" href="images/splash/splash-screen@3x.png" />
+        media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" sizes="640x1096" href="images/splash/splash-screen@3x.png">
 
     <title>ConneXtus :: Professional Business Card Binder</title>
 
@@ -59,16 +60,39 @@ if ($conn->query($sql) === TRUE) {
     <link href="../styles/style.css" rel="stylesheet" type="text/css">
 
 
-    <script type="text/javascript" src="../scripts/jquery.js"></script>
-    <script type="text/javascript" src="../scripts/jqueryui.js"></script>
-    <script type="text/javascript" src="../scripts/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="../scripts/jquery.swipebox.js"></script>
-    <script type="text/javascript" src="../scripts/colorbox.js"></script>
-    <script type="text/javascript" src="../scripts/snap.js"></script>
-    <script type="text/javascript" src="../scripts/contact.js"></script>
-    <script type="text/javascript" src="../scripts/custom.js"></script>
-    <script type="text/javascript" src="../scripts/framework.js"></script>
-    <script type="text/javascript" src="../scripts/framework.launcher.js"></script>
+    <script  src="../scripts/jquery.js"></script>
+    <script  src="../scripts/jqueryui.js"></script>
+    <script  src="../scripts/owl.carousel.min.js"></script>
+    <script  src="../scripts/jquery.swipebox.js"></script>
+    <script  src="../scripts/colorbox.js"></script>
+    <script  src="../scripts/snap.js"></script>
+    <script  src="../scripts/contact.js"></script>
+    <script  src="../scripts/custom.js"></script>
+    <script  src="../scripts/framework.js"></script>
+    <script  src="../scripts/framework.launcher.js"></script>
+
+    <style>
+        
+    .meetingResponse {
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(1, 68, 121);
+        /* Fallback color */
+        background-color: rgba(1, 68, 121, 0.99);
+        /* Black w/ opacity */
+    }
+</style>
+
 
 </head>
 
@@ -107,33 +131,13 @@ if ($conn->query($sql) === TRUE) {
 </div>
 -->
 
-    <style>
-        
-        .meetingResponse {
-            position: fixed;
-            /* Stay in place */
-            z-index: 1;
-            /* Sit on top */
-            left: 0;
-            top: 0;
-            width: 100%;
-            /* Full width */
-            height: 100%;
-            /* Full height */
-            overflow: auto;
-            /* Enable scroll if needed */
-            background-color: rgb(1, 68, 121);
-            /* Fallback color */
-            background-color: rgba(1, 68, 121, 0.99);
-            /* Black w/ opacity */
-        }
-    </style>
+    
 
     <div class="content">
     <div class="container" style="text-align: center">
                 <div class="meetingResponse flexxer flexxer-column align-center just-center">
                      <span style="background-color: #ffffff; padding: 10px; margin: 10px; border-radius:8px">
-                        <img src="http://www.connextusnow.com/connextus_app/img/Connextus_logoSmall.svg" alt="ConneXtus" width="200px">
+                        <img src="http://www.connextusnow.com/connextus_app/img/Connextus_logoSmall.svg" alt="ConneXtus" width="200">
                      </span>
                         <h2 style="color: #ffffff;">Thank you for reaching me! <br> You will hear from me pretty soon!</h2>
 
@@ -149,12 +153,6 @@ if ($conn->query($sql) === TRUE) {
 
 
 </div>
-
-
-    <!-- Meeting Modal -->
-    
-
-    <!-- Refer Modal -->
     
 </body>
 
