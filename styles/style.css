@@ -587,4 +587,10 @@ align-items: baseline;
 	text-transform: uppercase;
   }
 
+.callbtn_icon{
+	flex: 0 1 33%;
+	margin: 0 10px;
+}
+
+
   /**/

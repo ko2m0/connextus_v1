@@ -1,6 +1,6 @@
 <?php
-$mysqli = new mysqli("72.167.84.16","ko2m0","info4ko2m0","connextus_demo");
-/*$mysqli = new mysqli("localhost","root","","connextus_demo");*/
+/*$mysqli = new mysqli("72.167.84.16","ko2m0","info4ko2m0","connextus_demo");*/
+$mysqli = new mysqli("localhost","root","","connextus_demo");
 
 
 if ($mysqli -> connect_errno) {
@@ -168,10 +168,19 @@ if ($mysqli -> connect_errno) {
         <div class="container">
             <div>
         <a href="tel:<?php echo $row["user_phonenumber"]; ?>" class="button-big duo-bg phone-btn">
-        <img src="http://www.connextusnow.com/connextus_app/img/Connextus_LogoSmall4web.png" alt="" width="45">
-        CALL</a>
+            <div class="flexxer just-center">
+                <div class="callbtn_icon">
+                    <img src="http://www.connextusnow.com/connextus_app/img/Connextus_call_phoneIcon1.svg" alt="Call" width="30">
+                </div>
+                <div class="callbtn_icon">
+                    <img src="http://www.connextusnow.com/connextus_app/img/connextus_textlogoW.svg" alt="ConneXtus" width="150">
+                </div>
+                <div class="callbtn_icon">
+                    <img src="http://www.connextusnow.com/connextus_app/img/Connextus_logoSmall_whiteborder1.svg" alt="Logo" width="30" style="border: 2px solid #ffffff; border-radius:5px">
+                </div>
             </div>
-
+        </a>
+        </div>
             <div class="clear"></div>
         </div>
         
