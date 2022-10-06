@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/lsjbjbxv23ih/dev.connextusnow.com 
+    - export DEPLOYPATH=/home/lsjbjbxv23ih/public_html/dev.connextusnow.com 
     - /bin/cp -R images $DEPLOYPATH
     - /bin/cp -R mailing $DEPLOYPATH
     - /bin/cp -R php $DEPLOYPATH
