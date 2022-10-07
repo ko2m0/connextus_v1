@@ -1,6 +1,6 @@
 <?php
-$mysqli = new mysqli("72.167.84.16","ko2m0","info4ko2m0","connextus_demo");
-/*$mysqli = new mysqli("localhost","root","","connextus_demo");*/
+/*$mysqli = new mysqli("72.167.84.16","ko2m0","info4ko2m0","connextus_demo");*/
+$mysqli = new mysqli("localhost","root","","connextus_demo");
 
 
 if ($mysqli -> connect_errno) {
