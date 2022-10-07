@@ -6,6 +6,22 @@ body{
 	-webkit-text-stroke: 1px rgba(0, 0, 0, 0.01);
 }
 
+.mainWrapper{
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+
+.mainSection{
+	min-height: calc(70vh - 7em);
+}
+
+.footerSection{
+	position: -webkit-sticky;
+	position: sticky;
+	bottom: 0;
+}
+
+
  
 #box {
 	position:absolute;
@@ -401,6 +417,10 @@ align-items: center;
 justify-content:center;
 }
 
+.k-btn img{
+	min-height: 40px;
+}
+
 
 .unuscolor-txt {
 	color: #014479;
@@ -592,5 +612,9 @@ align-items: baseline;
 	margin: 0 10px;
 }
 
+
+.P-2vh{
+	padding: 2vh 0;
+}
 
   /**/
