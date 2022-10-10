@@ -28,7 +28,7 @@ body{
 
 .mainSection{
 	grid-area: mainArea;
-	min-height: calc(70vh - 3em);
+	min-height: calc(47vh - 7em);
 	max-width: 100vw;
 }
 
