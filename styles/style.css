@@ -43,9 +43,9 @@ body{
 
 .footerSection{
 	grid-area: footerArea;
-	position: -webkit-sticky;
+	/*position: -webkit-sticky;
 	position: sticky;
-	bottom: 0;
+	bottom: 0;*/
 	flex: 0 0 auto;
 }
 
@@ -441,6 +441,16 @@ align-items: center;
 justify-content:center;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+   .k-btn{
+	padding: 24px 48px;
+   }
+   .phone-btn{
+	padding: 18px 0;
+   }
+}
+
+
 .k-btn img{
 	min-height: 40px;
 }
@@ -642,3 +652,4 @@ align-items: baseline;
 }
 
   /**/
+
