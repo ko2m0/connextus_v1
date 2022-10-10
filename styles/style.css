@@ -4,6 +4,9 @@
 body{
 	background-color: #014479;
 	-webkit-text-stroke: 1px rgba(0, 0, 0, 0.01);
+	min-height: 100vh;
+	max-width: 1366px;
+	margin: 0 auto;
 }
 
 .mainWrapper{
@@ -15,7 +18,7 @@ body{
 	"mainArea"
 	"footerArea"
 	;
-	width: 100vw;
+	/*width: 100vw;*/
 	background-color: #ffffff;
 }
 
