@@ -12,7 +12,7 @@ body{
 }
 
 .mainSection{
-	min-height: calc(70vh - 5em);
+	min-height: calc(50vh - 7em);
 	max-width: 100vw;
 }
 
@@ -21,8 +21,6 @@ body{
 	position: sticky;
 	bottom: 0;
 }
-
-
  
 #box {
 	position:absolute;
@@ -266,9 +264,6 @@ body{
 }
 
 
-
-
-
 .twitter-header{
 	background-image:url(../images/misc/twitter.png);
 	background-size:25px 25px;
@@ -288,11 +283,11 @@ body{
 	text-align:right;
 	margin-bottom:-5px;
 }
-/*
+
 .footer{
-	height:55px;
+	padding: 20px 0;
 }
-*/
+
 .footer p{
 	color:#FFFFFF;
 	padding-top:23px;
