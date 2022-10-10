@@ -1,6 +1,6 @@
 <?php
-$mysqli = new mysqli("72.167.84.16","ko2m0","info4ko2m0","connextus_demo");
-/*$mysqli = new mysqli("localhost","root","","connextus_demo");*/
+/*$mysqli = new mysqli("72.167.84.16","ko2m0","info4ko2m0","connextus_demo");*/
+$mysqli = new mysqli("localhost","root","","connextus_demo");
 
 
 if ($mysqli -> connect_errno) {
@@ -90,10 +90,10 @@ if ($mysqli -> connect_errno) {
         </div>
     </div>
 
-    <div class="mainWrapper">
+  <div class="mainWrapper">
 
-<!-- Video Section -->
-<section class="videoSection">
+  <!-- Video Section -->
+ <section class="videoSection">
     <div class="container">
     <video playsinline controls class="responsive-video"  
         poster="http://www.connextusnow.com/connextus_app/img/connextus_thumbnail2.jpg">
@@ -101,8 +101,8 @@ if ($mysqli -> connect_errno) {
     Your browser does not support the video tag.
     </video>
     </div>
-</section>
-    <section class="mainSection">
+ </section>
+    <main class="mainSection">
         <div class="content">
             <div class="container">
                 <div class="container-flex">
@@ -235,38 +235,38 @@ if ($mysqli -> connect_errno) {
                 <a onclick="copyUrl2clipboard()" style="cursor:pointer"></a>
                 <script>
                    function copyUrl2clipboard() {
-  // Get the text field
-  var copyText = document.getElementById("urlLink");
+                // Get the text field
+                var copyText = document.getElementById("urlLink");
 
-  // Select the text field
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); // For mobile devices
+                // Select the text field
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999); // For mobile devices
 
-   // Copy the text inside the text field
-  navigator.clipboard.writeText(copyText.value);
+                // Copy the text inside the text field
+                    navigator.clipboard.writeText(copyText.value);
 
-  // Alert the copied text
-  alert("Copied the text: " + copyText.value);
-}
+                // Alert the copied text
+                    alert("Copied the text: " + copyText.value);
+                    }
 
                 </script>
--->
+                    -->
             </div>
             <div class="clear"></div>
-        </div>
-        <!--
-        <div class="container">
+          </div>
+         <!--
+         <div class="container">
             <div class="flexxer just-center align-center">
                 <img src="http://www.connextusnow.com/connextus_app/img/Connextus_logoSmall.svg" alt="ConneXtus"
                     width="80px">
             </div>
             <div class="clear"></div>
-        </div>
-        -->
-    </div>
+         </div>
+          -->
+         </div>
     
-    </section>
-    <section class="footerSection">
+                </main>
+    <footer class="footerSection">
     <div class="footer">
         <p>Copyright &copy; 2022 ConneXtus</p>
         <small>Privacy Policy</small>
@@ -274,7 +274,7 @@ if ($mysqli -> connect_errno) {
         
         <a href="#" class="go-up"></a>
     </div>
-    </section>
+                </footer>
 
     </div>
     
