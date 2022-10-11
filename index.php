@@ -63,6 +63,7 @@ if ($mysqli -> connect_errno) {
     <link href="styles/colorbox.css" rel="stylesheet" type="text/css">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <link href="styles/modals.css" rel="stylesheet" type="text/css">
+    <link href="styles/media-queries.css" rel="stylesheet" type="text/css">
     
 
 
@@ -95,7 +96,7 @@ if ($mysqli -> connect_errno) {
   <!-- Video Section -->
  <section class="videoSection">
     <div class="container videocontainer">
-    <video playsinline class="responsive-video"  
+    <video playsinline controls class="responsive-video"  
         poster="http://www.connextusnow.com/connextus_app/img/connextus_thumbnail2.jpg">
         <source src="<?php echo $row["profile_video"]; ?>" type="video/mp4">
     Your browser does not support the video tag.

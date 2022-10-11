@@ -31,8 +31,8 @@ body{
 .videoSection{
 	grid-area: videoArea;
 	flex: 0 1 auto;
-	position: sticky;
-	top: 0;
+	/*position: sticky;
+	top: 0;*/
 }
 
 .videocontainer{
@@ -41,6 +41,16 @@ body{
 	justify-content: center;
 	overflow: hidden;
 }
+
+@media only screen and (device-width: 360px) and (device-height: 780px)
+ and (-webkit-device-pixel-ratio: 3){
+	.responsive-video{
+		width: 100%;
+	}
+}
+
+
+
 
 
 .mainSection{
