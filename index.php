@@ -162,7 +162,7 @@ if ($mysqli -> connect_errno) {
         </div>
 
         <!-- -->
-        <div class="container">
+        <div class="container flexxer align-center just-center">
             <div>
         <a href="tel:<?php echo $row["user_phonenumber"]; ?>" class="button-big duo-bg phone-btn">
             <div class="flexxer just-center">
