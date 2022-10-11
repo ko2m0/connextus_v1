@@ -31,6 +31,7 @@ body{
 @media (height: 780px) {
 	.mainSection {
 	  min-height: calc(70vh - 3em);
+	  overflow-y: hidden;
 	}
   }
 
