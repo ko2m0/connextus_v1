@@ -94,8 +94,8 @@ if ($mysqli -> connect_errno) {
 
   <!-- Video Section -->
  <section class="videoSection">
-    <div class="container">
-    <video playsinline controls class="responsive-video"  
+    <div class="container videocontainer">
+    <video playsinline class="responsive-video"  
         poster="http://www.connextusnow.com/connextus_app/img/connextus_thumbnail2.jpg">
         <source src="<?php echo $row["profile_video"]; ?>" type="video/mp4">
     Your browser does not support the video tag.

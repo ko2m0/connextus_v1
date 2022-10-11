@@ -288,8 +288,8 @@ a{
 
 .responsive-video{
 	display:block;
-	width:100%;
-	margin-bottom:20px;
+	width:150%;
+	/*margin-bottom:20px;*/
 }
 
 .decoration{ 

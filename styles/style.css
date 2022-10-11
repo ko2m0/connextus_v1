@@ -8,11 +8,12 @@ body{
 	max-width: 1366px;
 	margin: 0 auto;
 	height: -webkit-fill-available;
+	box-sizing: border-box;
 }
 
 .mainWrapper{
 	display: flex;
-	flex-direction: column;
+	flex-flow: column nowrap;
 	/*display: grid;
 	grid-template-rows: auto 1fr auto;
 	grid-template-columns: repeat(1);
@@ -24,27 +25,23 @@ body{
 	width: 100vw;*/
 	background-color: #ffffff;
 	height: -webkit-fill-available;
-	justify-content: space-around;
-	align-items: stretch;
+	min-height: 100vh;
 }
-
-@media (height: 780px) {
-	.mainSection {
-	  min-height: calc(70vh - 3em);
-	  overflow-y: hidden;
-	}
-  }
-
-  @media only screen and (-webkit-min-device-pixel-ratio: 3){
-	.mainSection {
-		min-height: calc(70vh - 3em);
-	  }
-  }
 
 .videoSection{
 	grid-area: videoArea;
 	flex: 0 1 auto;
+	position: sticky;
+	top: 0;
 }
+
+.videocontainer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
 
 .mainSection{
 	/*
@@ -58,10 +55,10 @@ body{
 
 .footerSection{
 	grid-area: footerArea;
-	/*position: -webkit-sticky;
+	position: -webkit-sticky;
 	position: sticky;
-	bottom: 0;*/
-	flex: 0 0 auto;
+	bottom: 0;
+	flex: 0 1 auto;
 }
 
  
