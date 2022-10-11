@@ -43,6 +43,10 @@ body{
 }
 
 
+.p-hck{
+	padding: calc(8px + 1.5625vw);
+}
+
 
 
 
