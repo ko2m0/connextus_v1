@@ -30,6 +30,12 @@
     .k-btn{
         padding: 10px 20px;
     }
+    .callbtn_icon{
+        margin: 0 5px;
+    }
+    .footer{
+        padding: 1px 0;
+    }
 }
 
 /* SMALL */
