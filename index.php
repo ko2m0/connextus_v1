@@ -103,7 +103,7 @@ if ($mysqli -> connect_errno) {
     </div>
  </section>
     <main class="mainSection">
-        <div class="content" style="padding: 25px 0">
+        <div class="content" style="padding: 10px 0">
             <div class="container">
                 <div class="container-flex">
                     <div class="svgProfileMask" id="InfoBtn">
