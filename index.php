@@ -105,7 +105,7 @@ if ($mysqli -> connect_errno) {
  </section>
     <main class="mainSection">
         <div class="content p-hck">
-            <div class="container">
+            <div class="container P-2vh">
                 <div class="container-flex">
                     <div class="svgProfileMask" id="InfoBtn">
                         <svg viewBox="0 0 200 300" width="70" height="100">
@@ -134,7 +134,6 @@ if ($mysqli -> connect_errno) {
 
             <div class="clear"></div>
         </div>
-            <div class="decoration"></div>
         <!-- -->
         <div class="container P-2vh">
             <div class="one-third">
@@ -162,7 +161,7 @@ if ($mysqli -> connect_errno) {
         </div>
 
         <!-- -->
-        <div class="container">
+        <div class="container P-2vh">
             <div>
         <a href="tel:<?php echo $row["user_phonenumber"]; ?>" class="button-big duo-bg phone-btn">
             <div class="flexxer just-center">
@@ -207,10 +206,7 @@ if ($mysqli -> connect_errno) {
             </div>
             <div class="clear"></div>
         </div>
-        -->
-        <div class="decoration"></div>
-
-        
+        -->        
 
         <div class="container P-2vh">
             <div class="flexxer just-around align-center">
