@@ -35,6 +35,7 @@ body{
 }
 */
 .videoSection{
+	flex-grow: 0;
 	/*grid-area: videoArea;
 	flex: 0 1 auto;
 	position: sticky;
@@ -63,14 +64,28 @@ body{
 	min-height: fit-content;
 	display: flex;
 	flex-flow: column nowrap;
-	justify-content: center;
+	justify-content: flex-start;
 	align-self: stretch;
+	flex-grow: 1;
 }
+
+.content{
+	display: flex;
+	flex-flow: column nowrap;
+	align-self: stretch;
+	justify-content: space-between;
+	min-height: calc(45vh - 11em);
+	flex-grow: 1;
+}
+
 
 .footerSection{
 	position: -webkit-sticky;
 	position: sticky;
 	bottom: 0;
+	background-color: #014479;
+	flex-grow: 0;
+	height: calc(10vh - 2em);
 	/*flex: 0 1 auto;*/
 }
 
