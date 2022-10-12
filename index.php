@@ -266,11 +266,12 @@ if ($mysqli -> connect_errno) {
         <!--<small>Privacy Policy</small>
         <small>Terms & Conditions</small>
         
-        <a href="#" class="go-up"></a>-->
+        <a href="#" class="go-up"></a> -->
     </div>
                 </footer>
 
     </div>
+    
     
     
 <!-- ////// MODALS -->
@@ -287,14 +288,14 @@ if ($mysqli -> connect_errno) {
     </div>
     <div class="decoration"></div>
     <div class="modal-body">
-        <div class="container">
+        <div class="container P-2vh">
             <h4>
                 <?php echo $row['profile_about']; ?>
             </h4>
             <div class="clear"></div>
         </div>
         <div class="decoration"></div>
-        <div class="container">
+        <div class="container P-2vh">
             <h4 class="caps unuscolor-txt">Some of my Clients</h4>
         <ul class="gallery">
             <li><a class="" title="Client1"><img src="<?php echo $row["profile_client1"]; ?>" alt="img" /></a>
