@@ -293,7 +293,7 @@ if (mail($emailto_3, $subject_3, $message_3, $headers))
   |header("refresh: 2; url = http://alt.connextusnow.com");
 */
 
-  echo "<meta http-equiv=\"refresh\" content=\"3;URL=http://card.connextusnow.com\">";
+  echo "<meta http-equiv=\"refresh\" content=\"3;URL=http://dev.connextusnow.com\">";
 
 } else {
   echo "Error registrando datos: " . $conn->error;

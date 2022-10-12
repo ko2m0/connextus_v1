@@ -267,7 +267,7 @@ $meetingToMailContent = file_get_contents("../mailing/meeting/meeting_form.php")
 mail($to_1,$subject_1,$message_1,$meetingToMailContent,$headers_1);
 */
 
-  echo "<meta http-equiv=\"refresh\" content=\"3;URL=http://card.connextusnow.com\">";
+  echo "<meta http-equiv=\"refresh\" content=\"3;URL=http://dev.connextusnow.com\">";
 
 } else {
   echo "Error registrando datos: " . $conn->error;

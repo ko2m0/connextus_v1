@@ -1,22 +1,26 @@
 
 /* SAMSUNG S22+  */
-@media only screen and (device-width: 360px) and (device-height: 780px)
+@media all and (device-width: 360px) and (device-height: 780px)
  and (-webkit-device-pixel-ratio: 3){
 	
 }
 
 /* iPHONE 12, 12 Pro */
-@media only screen and (device-width: 390px) and (device-height: 844px)
+@media all and (device-width: 390px) and (device-height: 844px)
  and (-webkit-device-pixel-ratio: 3){
 	
 }
 
 
 /* X-SMALL */
-@media only screen and (max-width: 595px){
-    .responsive-video{
+@media all and (max-width: 595px){
+    /*.responsive-video{
 		width: 100%;
 	}
+    .content{
+        min-height: calc(45vh - 11em);
+    }
+    */
     .container{
         margin-bottom: 0;
     }
@@ -32,31 +36,32 @@
     .footer{
         padding: 1px 0;
     }
+    
 }
 
 /* SMALL */
-@media only screen and (min-width: 600px){
+@media all and (min-width: 600px){
     .responsive-video{
 		width: 100%!important;
 	}
 }
 
 /* MEDIUM */
-@media only screen and (min-width: 768px){
+@media all and (min-width: 768px){
     .responsive-video{
 		width: 100%!important;
 	}
 }
 
 /* LARGE */
-@media only screen and (min-width: 889px){
+@media all and (min-width: 889px){
     .responsive-video{
 		width: 100%!important;
 	}
 }
 
 /* X-LARGE */
-@media only screen and (min-width: 1200px){
+@media all and (min-width: 1200px){
     .responsive-video{
 		width: 100%!important;
 	}
