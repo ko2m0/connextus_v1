@@ -8,7 +8,7 @@ if ($mysqli -> connect_errno) {
     exit();
   }
   
-  $sql = "SELECT * FROM connextus_demo_data WHERE user_id='6'";
+  $sql = "SELECT * FROM connextus_demo_data WHERE user_id='1'";
   $result = $mysqli -> query($sql);
   
   // Associative array
@@ -41,7 +41,7 @@ if ($mysqli -> connect_errno) {
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
@@ -54,7 +54,6 @@ if ($mysqli -> connect_errno) {
 
     <title>ConneXtus :: Professional Business Card Binder</title>
 
-
     <link href="styles/color-default.css" rel="stylesheet" type="text/css" id="pagestyle">
     <link href="styles/framework.css" rel="stylesheet" type="text/css">
     <link href="styles/owl.carousel.css" rel="stylesheet" type="text/css">
@@ -65,8 +64,6 @@ if ($mysqli -> connect_errno) {
     <link href="styles/modals.css" rel="stylesheet" type="text/css">
     <link href="styles/media-queries.css" rel="stylesheet" type="text/css">
     
-
-
     <script  src="scripts/jquery.js"></script>
     <script  src="scripts/jqueryui.js"></script>
     <script  src="scripts/owl.carousel.min.js"></script>
