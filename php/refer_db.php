@@ -165,12 +165,12 @@ if ($conn->query($sql) === TRUE) {
   
 $template_referral = "../mailing/referral/referral_form.php";
 
-$emailto_1 = "wendy@online4color.com";
+$emailto_1 = "info@online4color.com";
 $subject_1 = "ConneXtus Submitted Referral form";
 
 $swap_var = array(
     "{EMAIL_LOGO}" => "http://www.connextusnow.com/connextus_app/img/Connextus_LogoSmall4web.png",
-    "{NAME}" => "Wendy",
+    "{NAME}" => "Rolando",
     "{REFERRALTONAME}" => "$referralToName",
     "{REFERRALTOEMAIL}" => "$referralToEmail",
     "{REFERRALTOPHONE}" => "$referralToPhone",
@@ -220,7 +220,7 @@ $swap_var2 = array(
     "{REFERRALFROMEMAIL4}" => "$referralFromEmail",
     "{REFERRALPRIORITY4}" => "$referralPriority", 
     "{REFERRALCOMMENT4}" => "$referralComment",
-    "{WENDYCONNEXTUS}" => "http://card.connextusnow.com/",
+    "{WENDYCONNEXTUS}" => "http://dev.connextusnow.com/",
 );
 
 $headers = "From: ConneXtus Team <info@connextusnow.com>\r\n";
@@ -263,7 +263,7 @@ $swap_var3 = array(
     "{REFERRALFROMEMAIL3}" => "$referralFromEmail",
     "{REFERRALPRIORITY3}" => "$referralPriority", 
     "{REFERRALCOMMENT3}" => "$referralComment",
-    "{WENDYCONNEXTUS}" => "http://card.connextusnow.com/",
+    "{WENDYCONNEXTUS}" => "http://dev.connextusnow.com/",
 );
 
 $headers = "From: ConneXtus Team <info@connextusnow.com>\r\n";

@@ -165,7 +165,7 @@ if ($conn->query($sql) === TRUE) {
 
 $template_meeting = "../mailing/meeting/meeting_form.php";
 
-$emailto_1 = "wendy@online4color.com";
+$emailto_1 = "info@online4color.com";
 $subject_1 = "ConneXtus Submitted Meeting form";
 
 $meeting_date_format = strtotime( $meeting_date );
@@ -174,7 +174,7 @@ $meeting_date_formatted = date( 'l jS \of F Y h:i:s A', $meeting_date_format);
 
 $swap_var = array(
     "{EMAIL_LOGO}" => "http://www.connextusnow.com/connextus_app/img/Connextus_LogoSmall4web.png",
-    "{NAME}" => "Wendy",
+    "{NAME}" => "Rolando",
     "{MEETINGWITH_NAME}" => "$meeting_name",
     "{MEETINGWITH_EMAIL}" => "$meeting_email",
     "{MEETINGWITH_PHONE}" => "$meeting_phone",
@@ -214,7 +214,7 @@ $subject_2 = "ConneXtus Submitted Meeting form";
 
 $swap_var2 = array(
     "{EMAIL_LOGO}" => "http://www.connextusnow.com/connextus_app/img/Connextus_LogoSmall4web.png",
-    "{NAME2}" => "Wendy Torres",
+    "{NAME2}" => "Rolando Gutierrez",
     "{MEETINGWITH_NAME2}" => "$meeting_name",
     "{MEETINGWITH_EMAIL2}" => "$meeting_email",
     "{MEETINGWITH_PHONE2}" => "$meeting_phone",
