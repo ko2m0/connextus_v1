@@ -8,7 +8,7 @@ if ($mysqli -> connect_errno) {
     exit();
   }
   
-  $sql = "SELECT * FROM connextus_demo_data WHERE user_id='6'";
+  $sql = "SELECT * FROM connextus_demo_data WHERE user_id='1'";
   $result = $mysqli -> query($sql);
   
   // Associative array
@@ -20,7 +20,7 @@ if ($mysqli -> connect_errno) {
   $row['profile_job'],
   $row['profile_ws'],
   $row['profile_about'],
-  $row['profile_client1'
+  $row['profile_client1'],
   $row['profile_client2'],
   $row['profile_client3'],
   $row['profile_client4'],
