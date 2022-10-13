@@ -87,21 +87,21 @@ if ($mysqli -> connect_errno) {
             </p>
         </div>
     </div>
-
+  
   <div class="mainWrapper">
 
-  <!-- Video Section -->
- <section class="videoSection">
-    <div class="container videocontainer">
-    <video playsinline controls class="responsive-video"  
-        poster="http://www.connextusnow.com/connextus_app/img/connextus_thumbnail2.jpg">
-        <source src="<?php echo $row["profile_video"]; ?>" type="video/mp4">
-    Your browser does not support the video tag.
-    </video>
-    </div>
- </section>
+      <!-- Video Section -->
+    <header class="videoSection">
+       <div class="container videocontainer">
+         <video playsinline controls class="responsive-video"  
+           poster="http://www.connextusnow.com/connextus_app/img/connextus_thumbnail2.jpg">
+           <source src="<?php echo $row["profile_video"]; ?>" type="video/mp4">
+                Your browser does not support the video tag.
+         </video>
+       </div>
+    </header>
     <main class="mainSection">
-        <div class="content p-hck">
+        <div class="mainSectionContent content p-hck">
             <div class="container P-2vh">
                 <div class="container-flex">
                     <div class="svgProfileMask" id="InfoBtn">
@@ -259,18 +259,18 @@ if ($mysqli -> connect_errno) {
           -->
          </div>
     
-                </main>
+    </main>
     <footer class="footerSection">
-    <div class="footer">
+      <div class="footer">
         <p>Copyright &copy; 2022 ConneXtus</p>
         <!--<small>Privacy Policy</small>
         <small>Terms & Conditions</small>
         
         <a href="#" class="go-up"></a> -->
-    </div>
-                </footer>
+      </div>
+    </footer>
 
-    </div>
+  </div>
     
     
     
