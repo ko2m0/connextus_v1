@@ -68,7 +68,7 @@ body{
 	    -ms-flex-pack: center;
 	        justify-content: center;
 	overflow: hidden;
-	height: calc(var(--vh, 1vh) * 47);
+	height: calc(var(--vh, 1vh) * 43);
 }
 
 
@@ -104,7 +104,7 @@ body{
 }
 
 .mainSectionContent{
-	height: calc(var(--vh, 1vh) * 50);
+	height: calc(var(--vh, 1vh) * 54);
 }
 
 .content{
