@@ -39,7 +39,7 @@
     
 }
 
-@media all and (max-height: 510px){
+@media all and (max-height: 600px){
 	.videocontainer{
         height: calc(var(--vh, 1vh) * 30);
     }
