@@ -43,6 +43,12 @@
 	.videocontainer{
         height: calc(var(--vh, 1vh) * 30);
     }
+    .k-btn{
+        padding: 10px 20px;
+    }
+    .phone-btn{
+        padding: 10px 0;
+    }
 
 }
 
