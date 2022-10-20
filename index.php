@@ -1,6 +1,6 @@
 <?php
-$mysqli = new mysqli("72.167.84.16","ko2m0","info4ko2m0","connextus_demo");
-/*$mysqli = new mysqli("localhost","root","","connextus_demo");*/
+/*$mysqli = new mysqli("72.167.84.16","ko2m0","info4ko2m0","connextus_demo");*/
+$mysqli = new mysqli("localhost","root","","connextus_demo");
 
 
 if ($mysqli -> connect_errno) {
@@ -53,6 +53,7 @@ if ($mysqli -> connect_errno) {
     <link rel="apple-touch-startup-image" sizes="640x1096" href="images/splash/splash-screen@3x.png">
 
     <title>ConneXtus :: Professional Business Card Binder</title>
+    <meta name="theme-color" content="#014479" >
 
     <link href="styles/color-default.css" rel="stylesheet" type="text/css" id="pagestyle">
     <link href="styles/framework.css" rel="stylesheet" type="text/css">

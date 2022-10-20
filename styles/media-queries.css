@@ -11,6 +11,34 @@
 	
 }
 
+/* iPHONE 8   */
+@media all and (device-width: 414px) and (device-height: 617px)
+ and (-webkit-device-pixel-ratio: 3){
+	.videocontainer{
+        height: calc(var(--vh, 1vh) * 30);
+    }
+    .k-btn{
+        padding: 10px 20px;
+    }
+    .phone-btn{
+        padding: 10px 0;
+    }
+}
+
+/* iPHONE 11 */
+@media all and (device-width: 414px) and (device-height: 715px)
+ and (-webkit-device-pixel-ratio: 3){
+	.videocontainer{
+        height: calc(var(--vh, 1vh) * 30);
+    }
+    .k-btn{
+        padding: 10px 20px;
+    }
+    .phone-btn{
+        padding: 10px 0;
+    }
+}
+
 
 /* X-SMALL */
 @media all and (max-width: 595px){
