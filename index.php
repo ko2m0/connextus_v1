@@ -41,7 +41,7 @@ if ($mysqli -> connect_errno) {
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
@@ -53,7 +53,7 @@ if ($mysqli -> connect_errno) {
     <link rel="apple-touch-startup-image" sizes="640x1096" href="images/splash/splash-screen@3x.png">
 
     <title>ConneXtus :: Professional Business Card Binder</title>
-
+    <meta name="theme-color" content="#014479" >
 
     <link href="styles/color-default.css" rel="stylesheet" type="text/css" id="pagestyle">
     <link href="styles/framework.css" rel="stylesheet" type="text/css">
@@ -63,9 +63,8 @@ if ($mysqli -> connect_errno) {
     <link href="styles/colorbox.css" rel="stylesheet" type="text/css">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <link href="styles/modals.css" rel="stylesheet" type="text/css">
+    <link href="styles/media-queries.css" rel="stylesheet" type="text/css">
     
-
-
     <script  src="scripts/jquery.js"></script>
     <script  src="scripts/jqueryui.js"></script>
     <script  src="scripts/owl.carousel.min.js"></script>
@@ -89,29 +88,25 @@ if ($mysqli -> connect_errno) {
             </p>
         </div>
     </div>
+  
+  <div class="mainWrapper">
 
-    <!-- Video Section -->
-    <div class="container">
-    <video playsinline controls class="responsive-video"  
-        poster="http://www.connextusnow.com/connextus_app/img/connextus_thumbnail2.jpg">
-        <source src="<?php echo $row["profile_video"]; ?>" type="video/mp4">
-    Your browser does not support the video tag.
-    </video>
-    </div>
-    <!--
-    <div class="container">
-        <div class="container_iframe_video">
-            <iframe class="responsive-iframe" allowfullscreen="true"
-                src=""></iframe>
-        </div>
-    </div>
-     -->
-
-    <div class="content">
-        <div class="container">
-            <div class="container-flex">
-                <div class="svgProfileMask" id="InfoBtn">
-                    <svg viewBox="0 0 200 300" width="70" height="100">
+      <!-- Video Section -->
+    <header class="videoSection">
+       <div class="container videocontainer">
+         <video playsinline controls class="responsive-video"  
+           poster="http://www.connextusnow.com/connextus_app/img/connextus_thumbnail2.jpg">
+           <source src="<?php echo $row["profile_video"]; ?>" type="video/mp4">
+                Your browser does not support the video tag.
+         </video>
+       </div>
+    </header>
+    <main class="mainSection">
+        <div class="mainSectionContent content p-hck">
+            <div class="container P-2vh">
+                <div class="container-flex">
+                    <div class="svgProfileMask" id="InfoBtn">
+                        <svg viewBox="0 0 200 300" width="70" height="100">
                         <defs>
                             <clipPath id="clip">
                                 <circle cx="100" cy="100" r="100" />
@@ -137,9 +132,8 @@ if ($mysqli -> connect_errno) {
 
             <div class="clear"></div>
         </div>
-
         <!-- -->
-        <div class="container">
+        <div class="container P-2vh">
             <div class="one-third">
             <a href="sms:<?php echo $row['user_phonenumber']; ?>">   
             <!--<a href="https://wa.me//?text=Hello%20I%20would%20like%20to%20contact%20you">-->
@@ -165,7 +159,7 @@ if ($mysqli -> connect_errno) {
         </div>
 
         <!-- -->
-        <div class="container">
+        <div class="container P-2vh">
             <div>
         <a href="tel:<?php echo $row["user_phonenumber"]; ?>" class="button-big duo-bg phone-btn">
             <div class="flexxer just-center">
@@ -210,50 +204,9 @@ if ($mysqli -> connect_errno) {
             </div>
             <div class="clear"></div>
         </div>
--->
-        <div class="decoration"></div>
+        -->        
 
-        
-<style>
-    .tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 140px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -75px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
-</style>
-        <div class="container ">
+        <div class="container P-2vh">
             <div class="flexxer just-around align-center">
                 <a href="https://www.linkedin.com/shareArticle?mini=true&url=card.connextusnow.com%2F" target="_blank"
                     class="">
@@ -277,281 +230,285 @@ if ($mysqli -> connect_errno) {
                 <a onclick="copyUrl2clipboard()" style="cursor:pointer"></a>
                 <script>
                    function copyUrl2clipboard() {
-  // Get the text field
-  var copyText = document.getElementById("urlLink");
+                // Get the text field
+                var copyText = document.getElementById("urlLink");
 
-  // Select the text field
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); // For mobile devices
+                // Select the text field
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999); // For mobile devices
 
-   // Copy the text inside the text field
-  navigator.clipboard.writeText(copyText.value);
+                // Copy the text inside the text field
+                    navigator.clipboard.writeText(copyText.value);
 
-  // Alert the copied text
-  alert("Copied the text: " + copyText.value);
-}
+                // Alert the copied text
+                    alert("Copied the text: " + copyText.value);
+                    }
 
                 </script>
--->
+                    -->
             </div>
             <div class="clear"></div>
-        </div>
-        <!--
-        <div class="container">
+          </div>
+         <!--
+         <div class="container">
             <div class="flexxer just-center align-center">
                 <img src="http://www.connextusnow.com/connextus_app/img/Connextus_logoSmall.svg" alt="ConneXtus"
                     width="80px">
             </div>
             <div class="clear"></div>
-        </div>
-        -->
-    </div>
-
-
-    <!-- INFO & CLIENTS Modal -->
-    <div id="ModalInfo" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="close3 close">&times;</span>
-                <h2 class="unuscolor-txt">About Me</h2>
-            </div>
-            <div class="decoration"></div>
-            <div class="modal-body">
-                <div class="container">
-                    <h4>
-                        <?php echo $row['profile_about']; ?>
-                    </h4>
-                    <div class="clear"></div>
-                </div>
-                <div class="decoration"></div>
-                <div class="container">
-                    <h4 class="caps unuscolor-txt">Some of my Clients</h4>
-                <ul class="gallery">
-                    <li><a class="" title="Client1"><img src="<?php echo $row["profile_client1"]; ?>" alt="img" /></a>
-                    </li>
-                    <li><a class="" title="Client2"><img src="<?php echo $row["profile_client2"]; ?>" alt="img" /></a>
-                    </li>
-                    <li><a class="" title="Client3"><img src="<?php echo $row["profile_client3"]; ?>" alt="img" /></a>
-                    </li>
-                    <li><a class="" title="Client4"><img src="<?php echo $row["profile_client4"]; ?>" alt="img" /></a>
-                    </li>
-                </ul>
-                <div class="clear"></div>
-                </div> 
-            </div>
-            <div class="modal-footer">
-                <h3>&nbsp;</h3>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- ////// INFO & CLIENTS Modal -->
-
-
-
-
-
-    <!-- Meeting Modal -->
-    <div id="ModalMeet" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="close1 close">&times;</span>
-                <h2 class="unuscolor-txt">Meeting</h2>
-            </div>
-            <div class="decoration"></div>
-            <div class="modal-body">
-                <div class="contact-form no-bottom">
-                    <div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
-                        <div class="big-notification green-notification">
-                            <h3 class="uppercase">Message Sent </h3>
-                            <a href="#" class="close-big-notification">x</a>
-                            <p>Your message has been successfuly sent. Please allow up to 48 hours for a reply! Thank
-                                you!</p>
-                        </div>
-                    </div>
-
-                    <form action="/php/meet_db.php" method="post" class="meetingForm" id="meetingForm">
-                        <fieldset>
-                            <!--
-                            <div class="formValidationError" id="contactNameFieldError">
-                                <div class="static-notification-red tap-dismiss-notification">
-                                    <p class="center-text uppercase">Name is required!</p>
-                                </div>
-                            </div>
-                            <div class="formValidationError" id="contactEmailFieldError">
-                                <div class="static-notification-red tap-dismiss-notification">
-                                    <p class="center-text uppercase">Mail address required!</p>
-                                </div>
-                            </div>
-                            <div class="formValidationError" id="contactEmailFieldError2">
-                                <div class="static-notification-red tap-dismiss-notification">
-                                    <p class="center-text uppercase">Mail address must be valid!</p>
-                                </div>
-                            </div>
-                            <div class="formValidationError" id="contactMessageTextareaError">
-                                <div class="static-notification-red tap-dismiss-notification">
-                                    <p class="center-text uppercase">Message field is empty!</p>
-                                </div>
-                            </div>
-                            -->
-                            <div class="formFieldWrap">
-                                <label class="field-title meetingNameField" for="meetingNameField">
-                                    First and last name:<span> (required)</span></label>
-                                <input type="text" name="meetingNameField" value="" placeholder="John Smith" class="contactField requiredField"
-                                    id="meetingNameField" />
-                            </div>
-                            <div class="formFieldWrap">
-                                <label class="field-title meetingEmailField" for="meetingEmailField">Email:
-                                    <span> (required)</span></label>
-                                <input type="email" name="meetingEmailField" value="" placeholder="joe@mycompany.com"
-                                    class="contactField requiredField requiredEmailField" id="meetingEmailField" />
-                            </div>
-                            <div class="formFieldWrap">
-                                <label class="field-title meetingPhoneField" for="meetingPhoneField">Phone
-                                    Number: </label>
-                                <input type="tel" name="meetingPhoneField" value="" placeholder="XXX XXX XX XX"
-                                    class="contactField requiredField requiredEmailField" id="meetingPhoneField" />
-                            </div>
-                            <div class="formFieldWrap">
-                                <label class="field-title meetingDateField" for="meetingDateField">Date you&apos;d like to meet:
-                                    <span>(required)</span></label>
-                                <input type="datetime-local" name="meetingDateField" value=""
-                                    class="contactField requiredField meetingDateField" id="meetingDateField" />
-                            </div>
-                            <div class="formTextareaWrap">
-                                <label class="field-title meetingMsg" for="meetingMsg">Comment:
-                                    </label>
-                                <textarea name="meetingMsg" class="contactTextarea requiredField"
-                                    id="meetingMsg"></textarea>
-                            </div>
-                            <input type="hidden" id="txtUrl" name="txtUrl" value="" />
-                            <script>document.getElementById('txtUrl').value = window.location.href;</script>
-                            <div class="formSubmitButtonErrorsWrap">
-                                <input type="submit" class="buttonWrap button unus-bg contactSubmitButton"
-                                    id="meetingSubmitButton" value="SUBMIT" data-formId="meetingForm"/>
-                            </div>
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <h3>&nbsp;</h3>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- Refer Modal -->
-    <div id="ModalRefer" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="close2 close">&times;</span>
-                <h2 class="unuscolor-txt">Referral</h2>
-            </div>
-            <div class="decoration"></div>
-            <div class="modal-body">
-                <div class="container no-bottom">
-                    <div class="contact-form no-bottom"> 
-                        <!--
-                        <div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
-                            <div class="big-notification green-notification">
-                                <h3 class="uppercase">Message Sent </h3>
-                                <a href="#" class="close-big-notification">x</a>
-                                <p>Your message has been successfuly sent. Please allow up to 48 hours for a reply! Thank you!</p>
-                            </div>
-                        </div>
-                                -->
-                    
-                        <form action="/php/refer_db.php" method="post" class="referralForm" id="referralForm">
-                            <fieldset>
-                                <!-- 
-                                <div class="formValidationError" id="contactNameFieldError">
-                                    <div class="static-notification-red tap-dismiss-notification">
-                                        <p class="center-text uppercase">Name is required!</p>
-                                    </div>
-                                </div>             
-                                <div class="formValidationError" id="contactEmailFieldError">
-                                    <div class="static-notification-red tap-dismiss-notification">
-                                        <p class="center-text uppercase">Mail address required!</p>
-                                    </div>
-                                </div> 
-                                <div class="formValidationError" id="contactEmailFieldError2">
-                                    <div class="static-notification-red tap-dismiss-notification">
-                                        <p class="center-text uppercase">Mail address must be valid!</p>
-                                    </div>
-                                </div> 
-                                <div class="formValidationError" id="contactMessageTextareaError">
-                                    <div class="static-notification-red tap-dismiss-notification">
-                                        <p class="center-text uppercase">Message field is empty!</p>
-                                    </div>
-                                </div>   
-                                -->
-                                <div class="formFieldWrap">
-                                    <label class="field-title referralToNameField" for="referraltoNameField">Referral to First and Last Name:<span> (required)</span></label>
-                                    <input type="text" name="referralToNameField" value="" class="contactField requiredField" id="referralToNameField"/>
-                                </div>
-                                <div class="formFieldWrap">
-                                    <label class="field-title referralToEmailField" for="referralToEmailField">Referral to Email: <span> (required)</span></label>
-                                    <input type="email" name="referralToEmailField" value="" class="contactField requiredField referralEmailField" id="referralToEmailField"/>
-                                </div>
-                                <div class="formFieldWrap">
-                                    <label class="field-title referralToPhoneField" for="referralToPhoneField">Referral to Phone number:</label>
-                                    <input type="tel" name="referralToPhoneField" value="" class="contactField requiredField referralToPhoneField" id="referralToPhoneField"/>
-                                </div>
-                                <div class="formFieldWrap">
-                                    <label class="field-title referralfromNameField" for="referralFromNameField">Referral from First and Last Name: </label>
-                                    <input type="text" name="referralFromNameField" value="" class="contactField requiredField" id="referralFromNameField"/>
-                                </div>
-                                <div class="formFieldWrap">
-                                    <label class="field-title referralFromEmailField" for="referralFromEmailField">Referral from Email: </label>
-                                    <input type="text" name="referralFromEmailField" value="" class="contactField requiredField" id="referralFromEmailField"/>
-                                </div>
-                                <div class="formFieldWrap">
-                                    <label class="field-title referralPriority" for="referralPriority">Choose priority:</label>
-                                        <select class="contactField" name="referralPriority" id="referralPriority">
-                                            <option value="High Priority">High</option>
-                                            <option value="Medium Priority">Medium</option>
-                                            <option value="Low Priority">Low</option>    
-                                        </select>
-                                </div>
-                                
-                                <div class="formTextareaWrap">
-                                    <label class="field-title referralMsgField" for="referralMsgField">Comment: <span>(required)</span></label>
-                                    <textarea name="referralMsgField" class="contactTextarea requiredField" id="referralMsgField"></textarea>
-                                </div>
-                                <input type="hidden" id="txtUrl2" name="txtUrl2" value="" />
-                                <script>document.getElementById('txtUrl2').value = window.location.href;</script>
-                                <div class="formSubmitButtonErrorsWrap">
-                                    <input type="submit" class="buttonWrap button unus-bg contactSubmitButton" id="referralSubmitButton" value="SUBMIT" data-formId="referralForm"/>
-                                </div>
-                            </fieldset>
-                        </form>       
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <h3>&nbsp;</h3>
-            </div>
-        </div>
-
-    </div>
-
-
-
-    <div class="footer">
+         </div>
+          -->
+         </div>
+    
+    </main>
+    <footer class="footerSection">
+      <div class="footer">
         <p>Copyright &copy; 2022 ConneXtus</p>
-        <small>Privacy Policy</small>
+        <!--<small>Privacy Policy</small>
         <small>Terms & Conditions</small>
         
-        <a href="#" class="go-up"></a>
+        <a href="#" class="go-up"></a> -->
+      </div>
+    </footer>
+
+  </div>
+    
+    
+    
+<!-- ////// MODALS -->
+
+
+ <!-- INFO & CLIENTS Modal -->
+ <div id="ModalInfo" class="modal">
+
+<!-- Modal content -->
+<div class="modal-content">
+    <div class="modal-header">
+        <span class="close3 close">&times;</span>
+        <h2 class="unuscolor-txt">About Me</h2>
     </div>
+    <div class="decoration"></div>
+    <div class="modal-body">
+        <div class="container P-2vh">
+            <h4>
+                <?php echo $row['profile_about']; ?>
+            </h4>
+            <div class="clear"></div>
+        </div>
+        <div class="decoration"></div>
+        <div class="container P-2vh">
+            <h4 class="caps unuscolor-txt">Some of my Clients</h4>
+        <ul class="gallery">
+            <li><a class="" title="Client1"><img src="<?php echo $row["profile_client1"]; ?>" alt="img" /></a>
+            </li>
+            <li><a class="" title="Client2"><img src="<?php echo $row["profile_client2"]; ?>" alt="img" /></a>
+            </li>
+            <li><a class="" title="Client3"><img src="<?php echo $row["profile_client3"]; ?>" alt="img" /></a>
+            </li>
+            <li><a class="" title="Client4"><img src="<?php echo $row["profile_client4"]; ?>" alt="img" /></a>
+            </li>
+        </ul>
+        <div class="clear"></div>
+        </div> 
+    </div>
+    <div class="modal-footer">
+        <h3>&nbsp;</h3>
+    </div>
+</div>
+
+</div>
+    
+<!-- Meeting Modal -->
+<div id="ModalMeet" class="modal">
+
+<!-- Modal content -->
+<div class="modal-content">
+    <div class="modal-header">
+        <span class="close1 close">&times;</span>
+        <h2 class="unuscolor-txt">Meeting</h2>
+    </div>
+    <div class="decoration"></div>
+    <div class="modal-body">
+        <div class="contact-form no-bottom">
+            <div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
+                <div class="big-notification green-notification">
+                    <h3 class="uppercase">Message Sent </h3>
+                    <a href="#" class="close-big-notification">x</a>
+                    <p>Your message has been successfuly sent. Please allow up to 48 hours for a reply! Thank
+                        you!</p>
+                </div>
+            </div>
+
+            <form action="/php/meet_db.php" method="post" class="meetingForm" id="meetingForm">
+                <fieldset>
+                    <!--
+                    <div class="formValidationError" id="contactNameFieldError">
+                        <div class="static-notification-red tap-dismiss-notification">
+                            <p class="center-text uppercase">Name is required!</p>
+                        </div>
+                    </div>
+                    <div class="formValidationError" id="contactEmailFieldError">
+                        <div class="static-notification-red tap-dismiss-notification">
+                            <p class="center-text uppercase">Mail address required!</p>
+                        </div>
+                    </div>
+                    <div class="formValidationError" id="contactEmailFieldError2">
+                        <div class="static-notification-red tap-dismiss-notification">
+                            <p class="center-text uppercase">Mail address must be valid!</p>
+                        </div>
+                    </div>
+                    <div class="formValidationError" id="contactMessageTextareaError">
+                        <div class="static-notification-red tap-dismiss-notification">
+                            <p class="center-text uppercase">Message field is empty!</p>
+                        </div>
+                    </div>
+                    -->
+                    <div class="formFieldWrap">
+                        <label class="field-title meetingNameField" for="meetingNameField">
+                            First and last name:<span> (required)</span></label>
+                        <input type="text" name="meetingNameField" value="" placeholder="John Smith" class="contactField requiredField"
+                            id="meetingNameField" />
+                    </div>
+                    <div class="formFieldWrap">
+                        <label class="field-title meetingEmailField" for="meetingEmailField">Email:
+                            <span> (required)</span></label>
+                        <input type="email" name="meetingEmailField" value="" placeholder="joe@mycompany.com"
+                            class="contactField requiredField requiredEmailField" id="meetingEmailField" />
+                    </div>
+                    <div class="formFieldWrap">
+                        <label class="field-title meetingPhoneField" for="meetingPhoneField">Phone
+                            Number: </label>
+                        <input type="tel" name="meetingPhoneField" value="" placeholder="XXX XXX XX XX"
+                            class="contactField requiredField requiredEmailField" id="meetingPhoneField" />
+                    </div>
+                    <div class="formFieldWrap">
+                        <label class="field-title meetingDateField" for="meetingDateField">Date you&apos;d like to meet:
+                            <span>(required)</span></label>
+                        <input type="datetime-local" name="meetingDateField" value=""
+                            class="contactField requiredField meetingDateField" id="meetingDateField" />
+                    </div>
+                    <div class="formTextareaWrap">
+                        <label class="field-title meetingMsg" for="meetingMsg">Comment:
+                            </label>
+                        <textarea name="meetingMsg" class="contactTextarea requiredField"
+                            id="meetingMsg"></textarea>
+                    </div>
+                    <input type="hidden" id="txtUrl" name="txtUrl" value="" />
+                    <script>document.getElementById('txtUrl').value = window.location.href;</script>
+                    <div class="formSubmitButtonErrorsWrap">
+                        <input type="submit" class="buttonWrap button unus-bg contactSubmitButton"
+                            id="meetingSubmitButton" value="SUBMIT" data-formId="meetingForm"/>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <h3>&nbsp;</h3>
+    </div>
+</div>
+
+</div>
+    
+
+
+<!-- Refer Modal -->
+<div id="ModalRefer" class="modal">
+
+<!-- Modal content -->
+<div class="modal-content">
+    <div class="modal-header">
+        <span class="close2 close">&times;</span>
+        <h2 class="unuscolor-txt">Referral</h2>
+    </div>
+    <div class="decoration"></div>
+    <div class="modal-body">
+        <div class="container no-bottom">
+            <div class="contact-form no-bottom"> 
+                <!--
+                <div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
+                    <div class="big-notification green-notification">
+                        <h3 class="uppercase">Message Sent </h3>
+                        <a href="#" class="close-big-notification">x</a>
+                        <p>Your message has been successfuly sent. Please allow up to 48 hours for a reply! Thank you!</p>
+                    </div>
+                </div>
+                        -->
+            
+                <form action="/php/refer_db.php" method="post" class="referralForm" id="referralForm">
+                    <fieldset>
+                        <!-- 
+                        <div class="formValidationError" id="contactNameFieldError">
+                            <div class="static-notification-red tap-dismiss-notification">
+                                <p class="center-text uppercase">Name is required!</p>
+                            </div>
+                        </div>             
+                        <div class="formValidationError" id="contactEmailFieldError">
+                            <div class="static-notification-red tap-dismiss-notification">
+                                <p class="center-text uppercase">Mail address required!</p>
+                            </div>
+                        </div> 
+                        <div class="formValidationError" id="contactEmailFieldError2">
+                            <div class="static-notification-red tap-dismiss-notification">
+                                <p class="center-text uppercase">Mail address must be valid!</p>
+                            </div>
+                        </div> 
+                        <div class="formValidationError" id="contactMessageTextareaError">
+                            <div class="static-notification-red tap-dismiss-notification">
+                                <p class="center-text uppercase">Message field is empty!</p>
+                            </div>
+                        </div>   
+                        -->
+                        <div class="formFieldWrap">
+                            <label class="field-title referralToNameField" for="referraltoNameField">Referral to First and Last Name:<span> (required)</span></label>
+                            <input type="text" name="referralToNameField" value="" class="contactField requiredField" id="referralToNameField"/>
+                        </div>
+                        <div class="formFieldWrap">
+                            <label class="field-title referralToEmailField" for="referralToEmailField">Referral to Email: <span> (required)</span></label>
+                            <input type="email" name="referralToEmailField" value="" class="contactField requiredField referralEmailField" id="referralToEmailField"/>
+                        </div>
+                        <div class="formFieldWrap">
+                            <label class="field-title referralToPhoneField" for="referralToPhoneField">Referral to Phone number:</label>
+                            <input type="tel" name="referralToPhoneField" value="" class="contactField requiredField referralToPhoneField" id="referralToPhoneField"/>
+                        </div>
+                        <div class="formFieldWrap">
+                            <label class="field-title referralfromNameField" for="referralFromNameField">Referral from First and Last Name: </label>
+                            <input type="text" name="referralFromNameField" value="" class="contactField requiredField" id="referralFromNameField"/>
+                        </div>
+                        <div class="formFieldWrap">
+                            <label class="field-title referralFromEmailField" for="referralFromEmailField">Referral from Email: </label>
+                            <input type="text" name="referralFromEmailField" value="" class="contactField requiredField" id="referralFromEmailField"/>
+                        </div>
+                        <div class="formFieldWrap">
+                            <label class="field-title referralPriority" for="referralPriority">Choose priority:</label>
+                                <select class="contactField" name="referralPriority" id="referralPriority">
+                                    <option value="High Priority">High</option>
+                                    <option value="Medium Priority">Medium</option>
+                                    <option value="Low Priority">Low</option>    
+                                </select>
+                        </div>
+                        
+                        <div class="formTextareaWrap">
+                            <label class="field-title referralMsgField" for="referralMsgField">Comment: <span>(required)</span></label>
+                            <textarea name="referralMsgField" class="contactTextarea requiredField" id="referralMsgField"></textarea>
+                        </div>
+                        <input type="hidden" id="txtUrl2" name="txtUrl2" value="" />
+                        <script>document.getElementById('txtUrl2').value = window.location.href;</script>
+                        <div class="formSubmitButtonErrorsWrap">
+                            <input type="submit" class="buttonWrap button unus-bg contactSubmitButton" id="referralSubmitButton" value="SUBMIT" data-formId="referralForm"/>
+                        </div>
+                    </fieldset>
+                </form>       
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <h3>&nbsp;</h3>
+    </div>
+</div>
+
+</div>
+    
 
     <script>
         // Get the modal
@@ -610,6 +567,19 @@ if ($mysqli -> connect_errno) {
                 modalInfo.style.display = "none";
             }
         }
+    </script>
+    <script>
+        // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+let vh = window.innerHeight * 0.01;
+// Then we set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+// We listen to the resize event
+window.addEventListener('resize', () => {
+  // We execute the same script as before
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
     </script>
 
 </body>

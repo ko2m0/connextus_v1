@@ -79,7 +79,7 @@
                       width="80px" style="background-color:#F2F2F2; border-radius: 10px;padding: 15px;">
                       
               <h2 style='color: #F2F2F2'>Hi {REFERRALTONAME3}</h2>
-              <h4 style='color: #F2F2F2'><strong>{REFERRALFROMNAME3}</strong> connected you with<strong> Wendy Torres!</strong></h4>
+              <h4 style='color: #F2F2F2'><strong>{REFERRALFROMNAME3}</strong> connected you with<strong> Rolando Gutierrez!</strong></h4>
                     </td>
                   </tr>
                 </table>
@@ -96,7 +96,7 @@
             </tr>
             <tr>
               <td align="center" valign="top">
-                  <h4 style='color: #1a1a1a'>Here&apos;s Wendy&apos;s ConneXtus:</h4>
+                  <h4 style='color: #1a1a1a'>Here&apos;s Rolando&apos;s ConneXtus:</h4>
               </td>
             </tr>
             
