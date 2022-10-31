@@ -95,7 +95,7 @@ if ($mysqli -> connect_errno) {
     <header class="videoSection">
        <div class="container videocontainer">
          <video playsinline controls class="responsive-video"  
-           poster="http://www.connextusnow.com/connextus_app/img/connextus_thumbnail2.jpg">
+           poster="https://www.connextusnow.com/connextus_app/img/connextus_thumbnail2.jpg">
            <source src="<?php echo $row["profile_video"]; ?>" type="video/mp4">
                 Your browser does not support the video tag.
          </video>
@@ -116,7 +116,7 @@ if ($mysqli -> connect_errno) {
                             xlink:href="<?php echo $row["profile_pic"]; ?>"
                             clip-path="url(#clip)" />
                     </svg>
-                    <svg width="24px" height="24px" viewBox="0 0 24 24" style="position:absolute; top: 0;"  xmlns="http://www.w3.org/2000/svg"><rect x="0" fill="none" width="24" height="24"/><g fill="#ff9900"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></g></svg>
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" style="position:absolute; top: 0;"  xmlns="https://www.w3.org/2000/svg"><rect x="0" fill="none" width="24" height="24"/><g fill="#ff9900"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></g></svg>
     
                 </div>
                 <div class="flexxer flexxer-column align-start just-start" style="padding: 0 10px">
@@ -164,13 +164,13 @@ if ($mysqli -> connect_errno) {
         <a href="tel:<?php echo $row["user_phonenumber"]; ?>" class="button-big duo-bg phone-btn">
             <div class="flexxer just-center">
                 <div class="callbtn_icon">
-                    <img src="http://www.connextusnow.com/connextus_app/img/Connextus_call_phoneIcon1.svg" alt="Call" width="30">
+                    <img src="https://www.connextusnow.com/connextus_app/img/Connextus_call_phoneIcon1.svg" alt="Call" width="30">
                 </div>
                 <div class="callbtn_icon">
-                    <img src="http://www.connextusnow.com/connextus_app/img/connextus_textlogoW.svg" alt="ConneXtus" width="150">
+                    <img src="https://www.connextusnow.com/connextus_app/img/connextus_textlogoW.svg" alt="ConneXtus" width="150">
                 </div>
                 <div class="callbtn_icon">
-                    <img src="http://www.connextusnow.com/connextus_app/img/Connextus_logoSmall_whiteborder1.svg" alt="Logo" width="30" style="border: 2px solid #ffffff; border-radius:5px">
+                    <img src="https://www.connextusnow.com/connextus_app/img/Connextus_logoSmall_whiteborder1.svg" alt="Logo" width="30" style="border: 2px solid #ffffff; border-radius:5px">
                 </div>
             </div>
         </a>
@@ -210,20 +210,20 @@ if ($mysqli -> connect_errno) {
             <div class="flexxer just-around align-center">
                 <a href="https://www.linkedin.com/shareArticle?mini=true&url=card.connextusnow.com%2F" target="_blank"
                     class="">
-                    <img src="http://www.connextusnow.com/connextus_app/img/SM/Connextus_linkedinLogo.svg"
+                    <img src="https://www.connextusnow.com/connextus_app/img/SM/Connextus_linkedinLogo.svg"
                         alt="Linkedin" width="20px">
                 </a>
                 <a href="<?php echo $row["profile_sm2"]; ?>" target="_blank" class="">
-                    <img src="http://www.connextusnow.com/connextus_app/img/SM/Connextus_instagramLogo.svg" alt=""
+                    <img src="https://www.connextusnow.com/connextus_app/img/SM/Connextus_instagramLogo.svg" alt=""
                         width="20px">
                 </a>
                 <a href="https://www.facebook.com/sharer.php?u=card.connextusnow.com%2F"
                     target="_blank" class="">
-                    <img src="http://www.connextusnow.com/connextus_app/img/SM/Connextus_facebookLogo.svg" alt=""
+                    <img src="https://www.connextusnow.com/connextus_app/img/SM/Connextus_facebookLogo.svg" alt=""
                         width="20px">
                 </a>
                 <a href="https://twitter.com/intent/tweet?text=ConneXtusisagreattooltomeetbusinessaquantancies!&url=alt.connextusnow.com" target="_blank">
-                    <img src="http://www.connextusnow.com/connextus_app/img/SM/Connextus_twitterLogo.svg" alt=""
+                    <img src="https://www.connextusnow.com/connextus_app/img/SM/Connextus_twitterLogo.svg" alt=""
                         width="25px">
                 </a>
                 <!-- <input type="text" value="http://www.connextusnow.com/" id="urlLink" style="display:none">
