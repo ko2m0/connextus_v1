@@ -65,7 +65,7 @@ if ($conn->query($sql) === TRUE) {
     <script  src="../../../scripts/owl.carousel.min.js"></script>
     <script  src="../../../scripts/jquery.swipebox.js"></script>
     <script  src="../../../scripts/colorbox.js"></script>
-    <script  src="../../scripts/snap.js"></script>
+    <script  src="../../../scripts/snap.js"></script>
     <script  src="../../../scripts/contact.js"></script>
     <script  src="../../../scripts/custom.js"></script>
     <script  src="../../../scripts/framework.js"></script>
