@@ -269,7 +269,7 @@ mail($to_1,$subject_1,$message_1,$meetingToMailContent,$headers_1);
 
   echo "<meta http-equiv=\"refresh\" content=\"3;URL=https://dev.connextusnow.com/users/demo/kozmo.php\">";
 
-}
+
 
 } else {
   echo "Error registrando datos: " . $conn->error;
