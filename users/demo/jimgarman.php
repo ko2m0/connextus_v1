@@ -55,26 +55,26 @@ if ($mysqli -> connect_errno) {
     <title>ConneXtus :: Professional Business Card Binder</title>
     <meta name="theme-color" content="#014479" >
 
-    <link href="styles/color-default.css" rel="stylesheet" type="text/css" id="pagestyle">
-    <link href="styles/framework.css" rel="stylesheet" type="text/css">
-    <link href="styles/owl.carousel.css" rel="stylesheet" type="text/css">
-    <link href="styles/owl.theme.css" rel="stylesheet" type="text/css">
-    <link href="styles/swipebox.css" rel="stylesheet" type="text/css">
-    <link href="styles/colorbox.css" rel="stylesheet" type="text/css">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <link href="styles/modals.css" rel="stylesheet" type="text/css">
-    <link href="styles/media-queries.css" rel="stylesheet" type="text/css">
+    <link href="../../styles/color-default.css" rel="stylesheet" type="text/css" id="pagestyle">
+    <link href="../../styles/framework.css" rel="stylesheet" type="text/css">
+    <link href="../../styles/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link href="../../styles/owl.theme.css" rel="stylesheet" type="text/css">
+    <link href="../../styles/swipebox.css" rel="stylesheet" type="text/css">
+    <link href="../../styles/colorbox.css" rel="stylesheet" type="text/css">
+    <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+    <link href="../../styles/modals.css" rel="stylesheet" type="text/css">
+    <link href="../../styles/media-queries.css" rel="stylesheet" type="text/css">
     
-    <script  src="scripts/jquery.js"></script>
-    <script  src="scripts/jqueryui.js"></script>
-    <script  src="scripts/owl.carousel.min.js"></script>
-    <script  src="scripts/jquery.swipebox.js"></script>
-    <script  src="scripts/colorbox.js"></script>
-    <script  src="scripts/snap.js"></script>
-    <script  src="scripts/contact.js"></script>
-    <script  src="scripts/custom.js"></script>
-    <script  src="scripts/framework.js"></script>
-    <script  src="scripts/framework.launcher.js"></script>
+    <script  src="../../scripts/jquery.js"></script>
+    <script  src="../../scripts/jqueryui.js"></script>
+    <script  src="../../scripts/owl.carousel.min.js"></script>
+    <script  src="../../scripts/jquery.swipebox.js"></script>
+    <script  src="../../scripts/colorbox.js"></script>
+    <script  src="../../scripts/snap.js"></script>
+    <script  src="../../scripts/contact.js"></script>
+    <script  src="../../scripts/custom.js"></script>
+    <script  src="../../scripts/framework.js"></script>
+    <script  src="../../scripts/framework.launcher.js"></script>
 
 </head>
 
@@ -138,20 +138,20 @@ if ($mysqli -> connect_errno) {
             <a href="sms:<?php echo $row['user_phonenumber']; ?>">   
             <!--<a href="https://wa.me//?text=Hello%20I%20would%20like%20to%20contact%20you">-->
                     <div class="k-btn">
-                        <img src="/images/svg/msg_icon.svg" alt="Message">
+                        <img src="../../images/svg/msg_icon.svg" alt="Message">
                     </div>
                     <p class="center-text uppercase unuscolor-txt bold">Message</p>
                 </a>
             </div>
             <div class="one-third">
                 <div class="k-btn" id="MeetBtn">
-                    <img src="/images/svg/meet_icon.svg" alt="Meeting">
+                    <img src="../../images/svg/meet_icon.svg" alt="Meeting">
                 </div>
                 <p class="center-text uppercase unuscolor-txt bold">Meeting</p>
             </div>
             <div class="one-third last-column">
                     <div class="k-btn" id="ReferBtn">
-                        <img src="/images/svg/refer_icon.svg" alt="Referral">
+                        <img src="../../images/svg/refer_icon.svg" alt="Referral">
                     </div>
                 <p class="center-text uppercase unuscolor-txt bold">Referral</p>
             </div>
@@ -164,13 +164,13 @@ if ($mysqli -> connect_errno) {
         <a href="tel:<?php echo $row["user_phonenumber"]; ?>" class="button-big duo-bg phone-btn">
             <div class="flexxer just-center">
                 <div class="callbtn_icon">
-                    <img src="/images/ux/Connextus_call_phoneIcon1.svg" alt="Call" width="30">
+                    <img src="../../images/ux/Connextus_call_phoneIcon1.svg" alt="Call" width="30">
                 </div>
                 <div class="callbtn_icon">
-                    <img src="/images/ux/connextus_textlogoW.svg" alt="ConneXtus" width="150">
+                    <img src="../../images/ux/connextus_textlogoW.svg" alt="ConneXtus" width="150">
                 </div>
                 <div class="callbtn_icon">
-                    <img src="/images/ux/Connextus_logoSmall_whiteborder1.svg" alt="Logo" width="30" style="border: 2px solid #ffffff; border-radius:5px">
+                    <img src="../../images/ux/Connextus_logoSmall_whiteborder1.svg" alt="Logo" width="30" style="border: 2px solid #ffffff; border-radius:5px">
                 </div>
             </div>
         </a>
@@ -210,20 +210,20 @@ if ($mysqli -> connect_errno) {
             <div class="flexxer just-around align-center">
                 <a href="https://www.linkedin.com/shareArticle?mini=true&url=card.connextusnow.com%2F" target="_blank"
                     class="">
-                    <img src="/images/sm/Connextus_linkedinLogo.svg"
+                    <img src="../../images/sm/Connextus_linkedinLogo.svg"
                         alt="Linkedin" width="20px">
                 </a>
                 <a href="<?php echo $row["profile_sm2"]; ?>" target="_blank" class="">
-                    <img src="/images/sm/Connextus_instagramLogo.svg" alt=""
+                    <img src="../../images/sm/Connextus_instagramLogo.svg" alt=""
                         width="20px">
                 </a>
                 <a href="https://www.facebook.com/sharer.php?u=card.connextusnow.com%2F"
                     target="_blank" class="">
-                    <img src="/images/sm/Connextus_facebookLogo.svg" alt=""
+                    <img src="../../images/sm/Connextus_facebookLogo.svg" alt=""
                         width="20px">
                 </a>
                 <a href="https://twitter.com/intent/tweet?text=ConneXtusisagreattooltomeetbusinessaquantancies!&url=alt.connextusnow.com" target="_blank">
-                    <img src="/images/sm/Connextus_twitterLogo.svg" alt=""
+                    <img src="../../images/sm/Connextus_twitterLogo.svg" alt=""
                         width="25px">
                 </a>
                 <!-- <input type="text" value="http://www.connextusnow.com/" id="urlLink" style="display:none">
