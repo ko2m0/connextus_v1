@@ -339,7 +339,7 @@ if ($mysqli -> connect_errno) {
                 </div>
             </div>
 
-            <form action="../../../php/demo/users/kozmo/meet_db.php" method="post" class="meetingForm" id="meetingForm">
+            <form action="meet_db.php" method="post" class="meetingForm" id="meetingForm">
                 <fieldset>
                     <!--
                     <div class="formValidationError" id="contactNameFieldError">
@@ -435,7 +435,7 @@ if ($mysqli -> connect_errno) {
                 </div>
                         -->
             
-                <form action="https://dev.connextusnow.com/php/demo/users/kozmo/refer_db.php" method="post" class="referralForm" id="referralForm">
+                <form action="refer_db.php" method="post" class="referralForm" id="referralForm">
                     <fieldset>
                         <!-- 
                         <div class="formValidationError" id="contactNameFieldError">
