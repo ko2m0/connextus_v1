@@ -137,7 +137,7 @@ if ($conn->query($sql) === TRUE) {
     <div class="container" style="text-align: center">
                 <div class="meetingResponse flexxer flexxer-column align-center just-center">
                      <span style="background-color: #ffffff; padding: 10px; margin: 10px; border-radius:8px">
-                        <img src="http://www.connextusnow.com/connextus_app/img/Connextus_logoSmall.svg" alt="ConneXtus" width="200">
+                        <img src="https://dev.connextusnow.com/images/sm/Connextus_logoSmall.svg" alt="ConneXtus" width="200">
                      </span>
                         <h2 style="color: #ffffff;">Thank you for reaching me! <br> You will hear from me pretty soon!</h2>
 
@@ -173,7 +173,7 @@ $meeting_date_formatted = date( 'l jS \of F Y h:i:s A', $meeting_date_format);
 
 
 $swap_var = array(
-    "{EMAIL_LOGO}" => "http://www.connextusnow.com/connextus_app/img/Connextus_LogoSmall4web.png",
+    "{EMAIL_LOGO}" => "https://dev.connextusnow.com/images/ux/Connextus_LogoSmall4web.png",
     "{NAME}" => "Rolando",
     "{MEETINGWITH_NAME}" => "$meeting_name",
     "{MEETINGWITH_EMAIL}" => "$meeting_email",
@@ -213,7 +213,7 @@ $emailto_2 = "$meeting_email";
 $subject_2 = "ConneXtus Submitted Meeting form";
 
 $swap_var2 = array(
-    "{EMAIL_LOGO}" => "http://www.connextusnow.com/connextus_app/img/Connextus_LogoSmall4web.png",
+    "{EMAIL_LOGO}" => "https://dev.connextusnow.com/images/ux/Connextus_LogoSmall4web.png",
     "{NAME2}" => "Rolando Gutierrez",
     "{MEETINGWITH_NAME2}" => "$meeting_name",
     "{MEETINGWITH_EMAIL2}" => "$meeting_email",
@@ -267,7 +267,7 @@ $meetingToMailContent = file_get_contents("../mailing/meeting/meeting_form.php")
 mail($to_1,$subject_1,$message_1,$meetingToMailContent,$headers_1);
 */
 
-  echo "<meta http-equiv=\"refresh\" content=\"3;URL=http://dev.connextusnow.com\">";
+  echo "<meta http-equiv=\"refresh\" content=\"3;URL=https://dev.connextusnow.com\">";
 
 } else {
   echo "Error registrando datos: " . $conn->error;

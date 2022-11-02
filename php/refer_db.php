@@ -137,7 +137,7 @@ if ($conn->query($sql) === TRUE) {
           <div class="container" style="text-align: center">
                       <div class="meetingResponse flexxer flexxer-column align-center just-center">
                            <span style="background-color: #ffffff; padding: 10px; margin: 10px; border-radius:8px">
-                              <img src="http://www.connextusnow.com/connextus_app/img/Connextus_logoSmall.svg" alt="ConneXtus" width="200">
+                              <img src="https://dev.connextusnow.com/images/sm/Connextus_logoSmall.svg" alt="ConneXtus" width="200">
                            </span>
                               <h2 style="color: #ffffff;">Thank you for reaching me! <br> You will hear from me pretty soon!</h2>
   
@@ -169,7 +169,7 @@ $emailto_1 = "info@online4color.com";
 $subject_1 = "ConneXtus Submitted Referral form";
 
 $swap_var = array(
-    "{EMAIL_LOGO}" => "http://www.connextusnow.com/connextus_app/img/Connextus_LogoSmall4web.png",
+    "{EMAIL_LOGO}" => "https://dev.connextusnow.com/images/ux/Connextus_LogoSmall4web.png",
     "{NAME}" => "Rolando",
     "{REFERRALTONAME}" => "$referralToName",
     "{REFERRALTOEMAIL}" => "$referralToEmail",
@@ -212,7 +212,7 @@ $emailto_2 = "$referralFromEmail";
 $subject_2 = "ConneXtus Submitted Referral form";
 
 $swap_var2 = array(
-    "{EMAIL_LOGO}" => "http://www.connextusnow.com/connextus_app/img/Connextus_LogoSmall4web.png",
+    "{EMAIL_LOGO}" => "https://dev.connextusnow.com/images/ux/Connextus_LogoSmall4web.png",
     "{NAME2}" => "$referralFromName",
     "{REFERRALTONAME4}" => "$referralToName",
     "{REFERRALTOEMAIL4}" => "$referralToEmail",
@@ -255,7 +255,7 @@ $emailto_3 = "$referralToEmail";
 $subject_3 = "ConneXtus Submitted Referral form";
 
 $swap_var3 = array(
-    "{EMAIL_LOGO}" => "http://www.connextusnow.com/connextus_app/img/Connextus_LogoSmall4web.png",
+    "{EMAIL_LOGO}" => "https://dev.connextusnow.com/images/ux/Connextus_LogoSmall4web.png",
     "{NAME3}" => "$referralFromName",
     "{REFERRALTONAME3}" => "$referralToName",
     "{REFERRALTOEMAIL3}" => "$referralToEmail",
@@ -293,7 +293,7 @@ if (mail($emailto_3, $subject_3, $message_3, $headers))
   |header("refresh: 2; url = http://alt.connextusnow.com");
 */
 
-  echo "<meta http-equiv=\"refresh\" content=\"3;URL=http://dev.connextusnow.com\">";
+  echo "<meta http-equiv=\"refresh\" content=\"3;URL=https://dev.connextusnow.com\">";
 
 } else {
   echo "Error registrando datos: " . $conn->error;
