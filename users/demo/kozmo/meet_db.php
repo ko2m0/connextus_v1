@@ -51,25 +51,25 @@ if ($conn->query($sql) === TRUE) {
     <title>ConneXtus :: Professional Business Card Binder</title>
 
 
-    <link href="../../styles/color-default.css" rel="stylesheet" type="text/css" id="pagestyle">
-    <link href="../../styles/framework.css" rel="stylesheet" type="text/css">
-    <link href="../../styles/owl.carousel.css" rel="stylesheet" type="text/css">
-    <link href="../../styles/owl.theme.css" rel="stylesheet" type="text/css">
-    <link href="../../styles/swipebox.css" rel="stylesheet" type="text/css">
-    <link href="../../styles/colorbox.css" rel="stylesheet" type="text/css">
-    <link href="../../styles/style.css" rel="stylesheet" type="text/css">
+    <link href="../../../styles/color-default.css" rel="stylesheet" type="text/css" id="pagestyle">
+    <link href="../../../styles/framework.css" rel="stylesheet" type="text/css">
+    <link href="../../../styles/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link href="../../../styles/owl.theme.css" rel="stylesheet" type="text/css">
+    <link href="../../../styles/swipebox.css" rel="stylesheet" type="text/css">
+    <link href="../../../styles/colorbox.css" rel="stylesheet" type="text/css">
+    <link href="../../../styles/style.css" rel="stylesheet" type="text/css">
 
 
-    <script  src="../../scripts/jquery.js"></script>
-    <script  src="../../scripts/jqueryui.js"></script>
-    <script  src="../../scripts/owl.carousel.min.js"></script>
-    <script  src="../../scripts/jquery.swipebox.js"></script>
-    <script  src="../../scripts/colorbox.js"></script>
+    <script  src="../../../scripts/jquery.js"></script>
+    <script  src="../../../scripts/jqueryui.js"></script>
+    <script  src="../../../scripts/owl.carousel.min.js"></script>
+    <script  src="../../../scripts/jquery.swipebox.js"></script>
+    <script  src="../../../scripts/colorbox.js"></script>
     <script  src="../../scripts/snap.js"></script>
-    <script  src="../../scripts/contact.js"></script>
-    <script  src="../../scripts/custom.js"></script>
-    <script  src="../../scripts/framework.js"></script>
-    <script  src="../../scripts/framework.launcher.js"></script>
+    <script  src="../../../scripts/contact.js"></script>
+    <script  src="../../../scripts/custom.js"></script>
+    <script  src="../../../scripts/framework.js"></script>
+    <script  src="../../../scripts/framework.launcher.js"></script>
 
     <style>
         
