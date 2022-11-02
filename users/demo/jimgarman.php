@@ -208,7 +208,7 @@ if ($mysqli -> connect_errno) {
 
         <div class="container P-2vh">
             <div class="flexxer just-around align-center">
-                <a href="https://www.linkedin.com/shareArticle?mini=true&url=card.connextusnow.com%2F" target="_blank"
+                <a href="<?php echo $row["profile_sm1"]; ?>" target="_blank"
                     class="">
                     <img src="../../images/sm/Connextus_linkedinLogo.svg"
                         alt="Linkedin" width="20px">
@@ -217,7 +217,7 @@ if ($mysqli -> connect_errno) {
                     <img src="../../images/sm/Connextus_instagramLogo.svg" alt=""
                         width="20px">
                 </a>
-                <a href="https://www.facebook.com/sharer.php?u=card.connextusnow.com%2F"
+                <a href="<?php echo $row["profile_sm3"]; ?>"
                     target="_blank" class="">
                     <img src="../../images/sm/Connextus_facebookLogo.svg" alt=""
                         width="20px">
@@ -299,13 +299,13 @@ if ($mysqli -> connect_errno) {
         <div class="container P-2vh">
             <h4 class="caps unuscolor-txt">Some of my Clients</h4>
         <ul class="gallery">
-            <li><a class="" title="Client1"><img src="<?php echo $row["profile_client1"]; ?>" alt="img" /></a>
+            <li><a class="" title="Client1"><img src="<?php echo $row["profile_client1"]; ?>" alt="Client1" /></a>
             </li>
-            <li><a class="" title="Client2"><img src="<?php echo $row["profile_client2"]; ?>" alt="img" /></a>
+            <li><a class="" title="Client2"><img src="<?php echo $row["profile_client2"]; ?>" alt="Client2" /></a>
             </li>
-            <li><a class="" title="Client3"><img src="<?php echo $row["profile_client3"]; ?>" alt="img" /></a>
+            <li><a class="" title="Client3"><img src="<?php echo $row["profile_client3"]; ?>" alt="Client3" /></a>
             </li>
-            <li><a class="" title="Client4"><img src="<?php echo $row["profile_client4"]; ?>" alt="img" /></a>
+            <li><a class="" title="Client4"><img src="<?php echo $row["profile_client4"]; ?>" alt="Client24" /></a>
             </li>
         </ul>
         <div class="clear"></div>
