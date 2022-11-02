@@ -163,7 +163,7 @@ if ($conn->query($sql) === TRUE) {
 ';
 
 
-$template_meeting = "../../../mailing/meeting/meeting_form.php";
+$template_meeting = "https://dev.connextusnow.com/mailing/meeting/meeting_form.php";
 
 $emailto_1 = "kozmopimp@gmail.com";
 $subject_1 = "ConneXtus Submitted Meeting form";
@@ -207,7 +207,7 @@ if (mail($emailto_1, $subject_1, $message_1, $headers))
 
 // 
 
-$template_meeting2 = "../../../mailing/meeting/meeting2_form.php";
+$template_meeting2 = "https://dev.connextusnow.com/mailing/meeting/meeting2_form.php";
 
 $emailto_2 = "$meeting_email";
 $subject_2 = "ConneXtus Submitted Meeting form";
