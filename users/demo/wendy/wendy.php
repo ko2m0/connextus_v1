@@ -8,7 +8,7 @@ if ($mysqli -> connect_errno) {
     exit();
   }
   
-  $sql = "SELECT * FROM connextus_demo_data WHERE user_id='7'";
+  $sql = "SELECT * FROM connextus_demo_data WHERE user_id='0'";
   $result = $mysqli -> query($sql);
   
   // Associative array
